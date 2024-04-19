@@ -12,7 +12,7 @@ The problem: We need to calculate the mean of integers stored in a list. The cum
 <br>
 <b>Answer:</b> As needed, we can assign more bits for the representation of the number, up for to the hardware's memory capacity.
 <br> 
-<b>How to do it efficiently:</b> When adding two numbers together, we can first determine if the sum reaches the maximum size limit (if so, it might already be overflowing), and if so, we can add more bit representation to the sum before doing the addition. 
+<b>How to do it efficiently:</b> When adding two numbers together, we can first determine if adding the next number to the sum is reaching the maximum size limit (if so, it might already be overflowing), and if so, we can add more bit representation to the sum before doing the addition. 
 </p>
 
 ## Implementation Example
