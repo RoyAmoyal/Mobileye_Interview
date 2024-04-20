@@ -15,10 +15,10 @@ def sum_str(str1, str2):
         str_output.insert(0,str(char_sum%10)) # For example: 15 % 10 = 5, 1 for carry
         carry = char_sum // 10
     for i in range(diff - 1,-1,-1):
-        # now I will deal with the remaining carry if it exist
+        # Now I will deal with the remaining carry if it exists and the remaining number
         char_sum = int(str1[i]) + carry
-        # yay its actually working. when we insert to the list, we actually adding 1 more bit as needed.
-        str_output.insert(0, str(char_sum % 10))  # For example: 15 % 10 = 5, 1 for carry
+        # yay it's actually working. when we insert to the list, we actually adding 1 more bit as needed.
+        str_output.insert(0, str(char_sum % 10))  
         carry = char_sum // 10
     if carry != 0:
         str_output.insert(0,str(carry))  # For example: 15 % 10 = 5, 1 for carry
